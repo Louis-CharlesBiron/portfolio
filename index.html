@@ -1,17 +1,42 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Permissions-Policy" content="compute-pressure=(self)">
-    <link rel="shortcut icon" href="src/assets/img/favicon.png" type="image/x-icon">
-    <script src="/src/libs/canvasDotEffects.js"></script>
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon">
+
+    <script src="src/utility/utility.js"></script>
+
+    <script src="src/lib/canvasDotEffects/Canvas.js"></script>
+    <script src="src/lib/canvasDotEffects/Anim.js"></script>
+    <script src="src/lib/canvasDotEffects/objs/Shape.js"></script>
+    <script src="src/lib/canvasDotEffects/objs/Dot.js"></script>
+    <script src="src/lib/canvasDotEffects/utilities.js"></script>
+    <script src="src/assets/shapeDeclarations.js"></script>
+
+    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="stylesheet" href="src/css/accueil.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <title>LCB Portfolio</title>
-  </head>
+</head>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<body>
+<span style="position: fixed;top: 0;left: 0;" id="fpsDisplay"></span>
+  <!-- ACCUEIL -->
+  <div class="accueil_content">
+    <canvas id="accueil_canvas"></canvas>
+    <div class="accueil_align">
+      <h1 class="accueil_hi">Hi!</h1>
+      <h2 class="accueil_welcome">This is my portfolio</h2>
+    </div>
+  </div>
+
+
+  <!-- SCRIPTS -->
+  <script src="src/js/index.js"></script>
+  <script src="src/js/accueil.js"></script>
+</body>
 </html>
